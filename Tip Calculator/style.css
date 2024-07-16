@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 242, 242);
+    font-family: "Helvetica", sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
+    width: 600px;
+    margin: 100px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    background-color: rgba(213, 255, 205, 0.973);
+}
+
+button {
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: rgb(74, 167, 74);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin: 20px 0;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(61, 150, 61);
+    cursor: pointer;
+}
+
+label:nth-of-type(3) {
+    font-weight: bold;
+    color: rgb(6, 126, 6);
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
