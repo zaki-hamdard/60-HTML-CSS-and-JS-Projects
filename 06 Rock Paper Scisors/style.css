@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(1, 4, 5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+
+
+.buttons {
+    display: flex;
+    padding: 2rem;
+}
+
+button {
+    font-size: 5rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: rgb(160, 16, 40);
+    box-shadow: 0 0 10px rgb(255, 145, 0);
+}
+
+#paper {
+    background-color: rgb(11, 92, 158);
+    box-shadow: 0 0 10px rgb(85, 224, 4);
+}
+
+#scissors {
+    background-color: green;
+    box-shadow: 0 0 10px red;
+}
+
+.result {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.user-score, .computer-score {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.user-score {
+    margin-bottom: 0;
+    background-color: green;
+}
+
+.computer-score {
+    background-color: rgb(160, 16, 40);
+}
+
+.user-score span {
+    margin-left: 1rem;
+}
+
+.computer-score span {
+    margin-left: 1rem;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        pad: 1rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+       font-size: 2rem;
+       padding-top: 1rem;
+    }
+
+    .move {
+        padding: 0;
+    }
+
+    .buttons {
+        gap: 1rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .result {
+        margin: 0;
+    }
+    
+}

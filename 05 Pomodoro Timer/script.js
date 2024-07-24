@@ -9,7 +9,6 @@ start.addEventListener("click", startTimer);
 stop.addEventListener("click", () => {
     clearInterval(interval);
     updateTimer();
-    start.innerHTML = "resume";
 });
 reset.addEventListener("click", () => {
     clearInterval(interval);
