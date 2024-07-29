@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+            const myDate = new Date()
+        const myFormattedDate = dateFormatting(myDate);
+
+        function dateFormatting(dateObject) {
+            const parts = {
+                year: dateObject.getFullYear(),
+                month: dateObject.getMonth() + 1,
+                day: dateObject.getDate(),
+                hour: (dateObject.getHours() % 12) || 12,
+                minute: dateObject.getMinutes(),
+                seconds: dateObject.getMinutes(),
+                amOrpm: dateObject.getHours() < 12? "am":"pm"
+            }
+            return `It is ${parts.year}/${parts.month}/${parts.day} and ${parts.hour.toString().padStart(2, "0")}:${parts.minute.toString().padStart(2, "0")}:${parts.seconds.toString().padStart(2, "0")} ${parts.amOrpm}`
+        }
+
+
+        console.log(dateFormatting(myDate))
+</script>
+</body>
+</html>
