@@ -1,0 +1,129 @@
+
+body {
+    background-color: rgba(36, 36, 36, 0.979);
+    color: white;
+    margin: 0;
+    font-family: "Montserrat", 'Gill Sans', sans-serif;
+}
+
+.container {
+    background-color: black;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-top: 0.2rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.801);
+}
+
+.title {
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-city {
+    padding: 1rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(121, 5, 69, 0.411);
+    color: white;
+}
+
+#input-city::placeholder{
+    color: white;
+}
+
+input[type = "submit"] {
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgba(85, 8, 116, 0.644);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(105, 5, 136);
+
+}
+
+.weather-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin: .4rem 0;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.details {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ margin-top: 2rem;
+ gap: 1rem;
+}
+
+.details div {
+    background-color: rgb(20, 39, 75);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+
+
+.details div:nth-child(2) {
+    background-color: rgb(27, 78, 61);
+}
+
+.details div:last-child {
+    background-color: rgb(107, 34, 34);
+}
+
+
+/* Media Query */
+
+
+
+@media screen and (max-width:700px){
+    .container {
+        max-width: 500px;
+        margin-top: 0;
+    }
+}
+
+}
