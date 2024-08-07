@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    min-height: 90vh;
+    width: 10%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0;
+    
+}
+
+.panel.active h3 {
+    
+    opacity: 100%;
+    transition: all 0.3s ease;
+}
+
+.active {
+    width: 90%;
+    transition: all 0.3s ease-in;
+}
+
+
