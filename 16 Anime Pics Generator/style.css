@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right bottom, lightblue, lightgreen)
+}
+
+.container {
+    background-color: rgba(251, 251, 251, 0.25);
+    padding: 30px;
+    border-radius: 7px;
+    width: 90%;
+    margin: 1rem;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 10px 10px rgba(127, 128, 127, 0.267);
+}
+
+h1.title {
+    font-size: 2rem;
+    color: rgb(2, 97, 30);
+}
+
+input {
+    font-size: 1rem;
+    padding: 1rem 4rem 1rem 0.7rem;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2rem;
+    outline: 2px solid rgba(2, 102, 173, 0.973);
+}
+
+input::placeholder {
+    color: rgba(82, 86, 87, 0.836);
+}
+
+.meaning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-title {
+    font-style: 1rem;
+    font-weight: bold;
+    color: rgb(13, 44, 182);
+}
+
+.word-title span, .word-meaning span {
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(10, 0, 0);
+    
+}
+
+.word-meaning {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(31, 122, 8);
+}
+
+audio {
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 255, 0.219);
+}
