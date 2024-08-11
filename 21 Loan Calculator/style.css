@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.288);
+    min-height: 100vh;
+    font-family: "Poppins";
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(215, 213, 213, 0.292);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+input {
+    width: 90%;
+    border: none;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    outline: none;
+}
